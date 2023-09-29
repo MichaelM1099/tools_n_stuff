@@ -17,3 +17,8 @@ it'll ask for domain input and check for A, MX, and txt records. Kinda just a fa
 
 --File_Integrity_Alert.py 
 This is kinda just a test I wanted to do. FIM is a way to ensure files are not tampered with. You can see the value of monitoring important files. This does that. You’ve just gotta edit the script for the file(s) you wish to monitor. IRL you’d need to make some adjustments and add it to a task schedule or something. But it creates a log and emails if a change in a files hash is detected. 
+
+
+
+--password_gen_year.py
+So there are a ton of password repositories but I’ve noticed they’re not updated a ton or at least the ones I’ve seen. So, I created this short script which will take user input and basically just add the year along with a symbol which is a very common password combo. So, you enter “summer” and it’ll output all of those permutation: Summer2023! Summer 2023@ etc. You can enter a number of base words separated by commas. The resulting word list will be written to wordlist.txt
