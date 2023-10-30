@@ -22,3 +22,7 @@ This is kinda just a test I wanted to do. FIM is a way to ensure files are not t
 
 --password_gen_year.py
 So there are a ton of wordlists but I’ve noticed they’re not updated a ton or at least the ones I’ve seen. So, I created this short script which will take user input and basically just add the year along with a symbol which is a very common password combo. So, you enter “summer” and it’ll output all of those permutation: Summer2023! Summer 2023@ etc. You can enter a number of base words separated by commas. The resulting word list will be written to wordlist.txt
+
+
+--ipchangealert.ps1 
+This powershell script basically just queries https://api.ipify.org which gives a response of the current public IP address. Then, a txt file is made in the same directory as the script called ip.txt. ip.txt stores the last IP address value. And when the script runs again, if the IP has changed, it will send an SMTP alert letting you know. This could be helpful if you don't have a static IP but are hosting something on the public internet. 
